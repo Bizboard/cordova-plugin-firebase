@@ -13,7 +13,7 @@ exports.onNotificationOpen = function(success, error) {
 };
 
 exports.onTokenRefresh = function(success, error) {
-    exec(success, error, "FirebasePlugin", "onTokenRefresh", []);
+    exec(success, error, "FirebasePlugin", "onTokenChanged", []);
 };
 
 exports.grantPermission = function(success, error) {
