@@ -9,7 +9,7 @@ import org.apache.cordova.firebase.FirebasePlugin;
 
 public class OnNotificationOpenReceiver extends WakefulBroadcastReceiver {
 
-    static String TAG = "Bizboard:Firebase";
+    static String TAG = "FirebasePlugin";
 
     // This is called when a notification (as triggered by FireBasePluginMessagingService
     // onMessageReceived() when the payload contains a notification) is opened by the user.

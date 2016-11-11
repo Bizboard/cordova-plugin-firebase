@@ -39,7 +39,7 @@ import me.leolin.shortcutbadger.ShortcutBadger;
 public class FirebasePlugin extends CordovaPlugin {
 
     private FirebaseAnalytics mFirebaseAnalytics;
-    private static String TAG = "Bizboard:Firebase";
+    private static String TAG = "FirebasePlugin";
     protected static final String KEY = "badge";
     protected static Bundle notificationBundle;
     private static CallbackContext callbackNotificationOpen;
@@ -152,7 +152,7 @@ public class FirebasePlugin extends CordovaPlugin {
         super.onNewIntent(intent);
         Bundle data = intent.getExtras();
         if (data != null) {
-            boolean isPush = data.getBoolean("rmc.is_push");
+            boolean isPush = data.getBoolean("firebase.is_push");
             String id = data.getString("id");
 
             Log.d(TAG, "INTENT DATA: is_push " + isPush + " id ");

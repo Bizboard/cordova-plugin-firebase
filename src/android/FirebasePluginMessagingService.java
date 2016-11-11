@@ -23,7 +23,7 @@ import java.util.Set;
 
 public class FirebasePluginMessagingService extends FirebaseMessagingService {
 
-    private static final String TAG = "Bizboard:Firebase";
+    private static final String TAG = "FirebasePlugin";
 
     public FirebasePluginMessagingService() {
         super();
